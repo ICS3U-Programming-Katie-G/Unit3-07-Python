@@ -28,8 +28,8 @@ def main():
 
     # gets the input from the user on if they are
     # good looking and if they are rich.
-    userRich = input("First: are you rich? (1 for yes or 0 for no) ")
-    userGoodLooking = input(
+    user_rich = input("First: are you rich? (1 for yes or 0 for no) ")
+    user_good_looking = input(
         "Second: are you extraordinarily good looking? (1 or yes or 0 for no) "
     )
 
@@ -37,10 +37,10 @@ def main():
     # input on if they are good looking and rich
     # is a valid response.
     try:
-        userRichInt = int(userRich)
-        userGoodLookingInt = int(userGoodLooking)
-        if userRichInt and userGoodLookingInt == 1 or 0:
-            if userRichInt or userGoodLookingInt == 1:
+        user_rich_int = int(user_rich)
+        user_good_looking_int = int(user_good_looking)
+        if user_rich_int and user_good_looking_int == 1 or 0:
+            if user_rich_int or user_good_looking_int == 1:
                 print(
                     "Congratulations! The council (which "
                     "consists only of myself and many, many "
