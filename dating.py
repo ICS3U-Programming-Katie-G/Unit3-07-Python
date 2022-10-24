@@ -39,21 +39,26 @@ def main():
     try:
         user_rich_int = int(user_rich)
         user_good_looking_int = int(user_good_looking)
-        if user_rich_int and user_good_looking_int == 1 or 0:
-            if user_rich_int or user_good_looking_int == 1:
-                print(
+        if user_rich_int == 1 or user_rich_int == 0:
+            if user_good_looking_int == 1 or user_good_looking_int == 0:
+                if user_rich_int or user_good_looking_int == 1:
+                    print(
                     "Congratulations! The council (which "
                     "consists only of myself and many, many "
                     "mirrors) has determined that you are "
                     "eligible to date my grandchild! You "
                     "better not make me regret this decision. :-)"
-                )
-            else:
+                    )
+                else:
+                    print(
+                        "Sorry! The council (which consists only "
+                        "of myself and many, many mirrors) has determined "
+                        "that you are NOT eligible to date my grandchild! "
+                        "Please leave now :-)"
+                    )
+            else: 
                 print(
-                    "Sorry! The council (which consists only "
-                    "of myself and many, many mirrors) has determined "
-                    "that you are NOT eligible to date my grandchild! "
-                    "Please leave now :-)"
+                    "This response was not valid. Respond only with '1' for 'yes' or '0' for 'no', please."
                 )
         else:
             print(
